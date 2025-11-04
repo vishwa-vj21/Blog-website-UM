@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Personal Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="#post1">Post 1</a></li>
+          <li><a href="#post2">Post 2</a></li>
+          <li><a href="#post3">Post 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="post1" class="blog-post">
+        <h2>The Journey Begins</h2>
+        <p class="date">Published on November 5, 2025</p>
+        <img src="https://via.placeholder.com/800x400" alt="Journey Image" />
+        <p>
+          Welcome to my first post! This is where I share my story and what I’ve
+          learned so far in web development...
+        </p>
+
+        <section class="comments">
+          <h3>Comments</h3>
+          <div class="comment-list" id="comments-post1"></div>
+          <form onsubmit="addComment(event, 'post1')">
+            <input type="text" placeholder="Your name" required />
+            <textarea placeholder="Your comment" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </article>
+
+      <article id="post2" class="blog-post">
+        <h2>Learning JavaScript</h2>
+        <p class="date">Published on November 1, 2025</p>
+        <img src="https://via.placeholder.com/800x400" alt="JavaScript Image" />
+        <p>
+          JavaScript is the backbone of interactive web apps. Here’s how I
+          started exploring DOM manipulation...
+        </p>
+
+        <section class="comments">
+          <h3>Comments</h3>
+          <div class="comment-list" id="comments-post2"></div>
+          <form onsubmit="addComment(event, 'post2')">
+            <input type="text" placeholder="Your name" required />
+            <textarea placeholder="Your comment" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </article>
+
+      <article id="post3" class="blog-post">
+        <h2>CSS Styling Tips</h2>
+        <p class="date">Published on October 28, 2025</p>
+        <img src="https://via.placeholder.com/800x400" alt="CSS Image" />
+        <p>
+          Good design matters! In this post, I talk about layout, typography,
+          and responsive web design principles...
+        </p>
+
+        <section class="comments">
+          <h3>Comments</h3>
+          <div class="comment-list" id="comments-post3"></div>
+          <form onsubmit="addComment(event, 'post3')">
+            <input type="text" placeholder="Your name" required />
+            <textarea placeholder="Your comment" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>© 2025 My Blog | Designed with ❤️ using HTML, CSS, and JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
