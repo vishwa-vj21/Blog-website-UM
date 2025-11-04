@@ -14,6 +14,7 @@
           <li><a href="#post1">Post 1</a></li>
           <li><a href="#post2">Post 2</a></li>
           <li><a href="#post3">Post 3</a></li>
+          <li><a href="#post4">Post 4</a></li>
         </ul>
       </nav>
     </header>
@@ -22,10 +23,14 @@
       <article id="post1" class="blog-post">
         <h2>The Journey Begins</h2>
         <p class="date">Published on November 5, 2025</p>
-        <img src="https://via.placeholder.com/800x400" alt="Journey Image" />
+        <img src="/images/journey.jpg" alt="Journey Image" />
         <p>
-          Welcome to my first post! This is where I share my story and what I’ve
-          learned so far in web development...
+          Welcome to my first post!
+          <br />
+          Every chapter in life begins with a small step — sometimes uncertain,
+          sometimes bold, but always meaningful. As I take this first step, I
+          feel a mix of excitement, curiosity, and peace. The road ahead is
+          unknown, and that’s exactly what makes it beautiful.
         </p>
 
         <section class="comments">
@@ -42,7 +47,7 @@
       <article id="post2" class="blog-post">
         <h2>Learning JavaScript</h2>
         <p class="date">Published on November 1, 2025</p>
-        <img src="https://via.placeholder.com/800x400" alt="JavaScript Image" />
+        <img src="/images/javascript.jpg" alt="JavaScript Image" />
         <p>
           JavaScript is the backbone of interactive web apps. Here’s how I
           started exploring DOM manipulation...
@@ -60,18 +65,42 @@
       </article>
 
       <article id="post3" class="blog-post">
-        <h2>CSS Styling Tips</h2>
-        <p class="date">Published on October 28, 2025</p>
-        <img src="https://via.placeholder.com/800x400" alt="CSS Image" />
+        <h2>The Joy of Simple Living</h2>
+        <p class="date">Published on November 3, 2025</p>
+        <img src="/images/simple-life.jpg" alt="Simple Living" />
         <p>
-          Good design matters! In this post, I talk about layout, typography,
-          and responsive web design principles...
+          In a world that moves fast, slowing down can feel revolutionary.
+          Simple living is about finding peace in small things — a quiet
+          morning, a walk in nature, or time spent with loved ones. It teaches
+          us that happiness often comes from less, not more.
         </p>
 
         <section class="comments">
           <h3>Comments</h3>
-          <div class="comment-list" id="comments-post3"></div>
-          <form onsubmit="addComment(event, 'post3')">
+          <div class="comment-list" id="comments-post4"></div>
+          <form onsubmit="addComment(event, 'post4')">
+            <input type="text" placeholder="Your name" required />
+            <textarea placeholder="Your comment" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </article>
+
+      <article id="post4" class="blog-post">
+        <h2>How Hobbies Keep Us Balanced</h2>
+        <p class="date">Published on November 2, 2025</p>
+        <img src="/images/hobbies.jpg" alt="Hobbies" />
+        <p>
+          Whether it's painting, gardening, reading, or cooking, hobbies give
+          our minds a much-needed pause from everyday stress. They remind us to
+          create for joy, not for perfection — and in that process, we
+          rediscover parts of ourselves we often forget.
+        </p>
+
+        <section class="comments">
+          <h3>Comments</h3>
+          <div class="comment-list" id="comments-post5"></div>
+          <form onsubmit="addComment(event, 'post5')">
             <input type="text" placeholder="Your name" required />
             <textarea placeholder="Your comment" required></textarea>
             <button type="submit">Submit</button>
@@ -81,7 +110,7 @@
     </main>
 
     <footer>
-      <p>© 2025 My Blog | Designed with ❤️ using HTML, CSS, and JS</p>
+      <p>© 2025 My Blog | Designed using HTML, CSS, and JS</p>
     </footer>
 
     <script src="script.js"></script>
