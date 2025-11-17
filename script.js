@@ -1,3 +1,4 @@
+// Comment functionality implementation
 function addComment(event, postId) {
   event.preventDefault();
   const form = event.target;
